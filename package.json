@@ -1,4 +1,5 @@
 {
+  "name": "newgeness",
   "private": true,
   "scripts": {
     "tsup-build": "tsup src/index.ts --format cjs,esm --dts",
