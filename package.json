@@ -1,6 +1,6 @@
 {
   "name": "newgeness",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "scripts": {
     "tsup-build": "tsup src/index.ts --format cjs,esm --dts",
     "build": "turbo run build",
