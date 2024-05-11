@@ -1,5 +1,6 @@
 {
   "name": "newgeness",
+  "version": "0.0.0",
   "private": true,
   "scripts": {
     "tsup-build": "tsup src/index.ts --format cjs,esm --dts",
