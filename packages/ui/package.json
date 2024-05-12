@@ -16,7 +16,6 @@
     "build-storybook": "storybook build"
   },
   "dependencies": {
-    "@newgeness/ui": "workspace:*",
     "@storybook/addon-themes": "^8.0.10"
   },
   "devDependencies": {
