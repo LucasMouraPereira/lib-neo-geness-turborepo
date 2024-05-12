@@ -19,7 +19,7 @@ export const Button = ({
     <button
       onClick={onClick}
       style={{
-        backgroundColor: primary ? "red" : "blue",
+        backgroundColor: primary ? "red" : backgroundColor?.control,
         fontSize: size === "large" ? "24px" : "14px",
       }}
     >
