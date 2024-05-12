@@ -10,10 +10,14 @@
     "publish": "turbo publish"
   },
   "devDependencies": {
-    "@repo/eslint-config": "workspace:*",
+    "@newgeness/eslint-config": "workspace:*",
     "eslint": "^8.57.0",
     "prettier": "^3.2.5",
     "turbo": "latest"
   },
-  "packageManager": "pnpm@8.9.0"
+  "packageManager": "pnpm@8.9.0",
+  "dependencies": {
+    "@newgeness/ui": "workspace:^",
+    "styled-components": "^6.1.11"
+  }
 }

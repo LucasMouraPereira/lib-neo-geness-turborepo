@@ -1,3 +1,3 @@
-# `@repo/eslint-config`
+# `@newgeness/eslint-config`
 
 Collection of internal eslint configurations.
