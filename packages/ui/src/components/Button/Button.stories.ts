@@ -3,14 +3,19 @@ import { fn } from "@storybook/test";
 import { Button } from ".";
 
 const meta: Meta<typeof Button> = {
-  title: "Example/Button",
+  title: "NeoGeness/Button",
   component: Button,
   parameters: {
     layout: "centered",
   },
   tags: ["autodocs"],
   argTypes: {
-    backgroundColor: { control: "color" },
+    as: {
+      control: {
+        type: 'select',
+        options: ['neoGeness'],
+      },
+    },
   },
   args: { onClick: fn() },
 };
@@ -21,27 +26,28 @@ type Story = StoryObj<typeof meta>;
 
 export const Primary: Story = {
   args: {
-    primary: true,
-    label: "Button",
+    as: 'neoGeness',
+    children: 'Button Client 1',
   },
 };
 
 export const Secondary: Story = {
   args: {
-    label: "Button",
+    as: 'neoGeness',
+    children: 'Button Client 1',
   },
 };
 
 export const Large: Story = {
   args: {
-    size: "large",
-    label: "Button",
+    as: 'neoGeness',
+    children: 'Button Client 1',
   },
 };
 
 export const Small: Story = {
   args: {
-    size: "small",
-    label: "Button",
+    as: 'neoGeness',
+    children: 'Button Client 1',
   },
 };

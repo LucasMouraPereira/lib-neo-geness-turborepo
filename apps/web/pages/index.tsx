@@ -1,9 +1,9 @@
-import { Button } from "@newgeness/ui/button";
+import { Button } from "@newgeness/ui";
 
 export default function Page() {
   return (
     <>
-      <Button />
+      <Button>exemplo</Button>
     </>
   );
 }

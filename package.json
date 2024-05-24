@@ -1,23 +1,33 @@
 {
   "name": "newgeness",
   "version": "0.0.3",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
   "scripts": {
-    "tsup-build": "tsup src/index.ts --format cjs,esm --dts",
     "build": "turbo run build",
     "dev": "turbo run dev",
     "lint": "turbo run lint",
+    "clean": "turbo run clean && rm -rf node_modules",
+    "type-check": "turbo type-check",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
-    "publish": "turbo publish"
+    "publish": "turbo publish",
+    "changeset": "changeset",
+    "version-packages": "changeset version",
+    "release": "turbo run build --filter=docs^... && changeset publish"
   },
   "devDependencies": {
     "@newgeness/eslint-config": "workspace:*",
+    "@newgeness/typescript-config": "workspace:*",
+    "@newgeness/themes": "workspace:^",
+    "@newgeness/ui": "workspace:^",
+    "@vitejs/plugin-react": "^4.2.1",
     "eslint": "^8.57.0",
     "prettier": "^3.2.5",
-    "turbo": "latest"
+    "prettier-plugin-tailwindcss": "^0.5.11",
+    "turbo": "latest",
+    "vite": "^5.2.11"
   },
-  "packageManager": "pnpm@8.9.0",
-  "dependencies": {
-    "@newgeness/ui": "workspace:^",
-    "styled-components": "^6.1.11"
-  }
+  "packageManager": "pnpm@8.9.0"
 }
